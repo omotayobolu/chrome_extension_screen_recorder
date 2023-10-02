@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #120b48;
+  --primary-color-600: #100a42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+  color: var(--primary-color);
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", sans-serif;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.popup {
+  width: 300px;
+  padding: 24px;
+  border: transparent;
+  border-radius: 24px;
+}
+
+.popup-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mode p,
+.permission div p {
+  font-weight: 500;
+}
+
+.permissions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.permission {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--primary-color-600);
+  border-radius: 12px;
+  padding: 4px 12px 4px 16px;
+}
+
+.permission div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.permission-toggle {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  border-radius: 12px;
+  background-color: var(--primary-color);
+}
+
+.permission-toggle div {
+  position: absolute;
+  left: 2px;
+  background-color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fafdff;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
