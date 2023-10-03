@@ -18,7 +18,10 @@
       "128": "/images/icon-128x128.png"
     }
   },
-  "host_permissions": ["http://*", "https://*"],
-  "permissions": [],
+  "externally_connectable": {
+    "matches": ["*://*.google.com/*"]
+  },
+  "host_permissions": ["http://*", "https://*", "https://www.google.com/"],
+  "permissions": ["scripting", "tabs", "activeTab"],
   "version": "1.0.0"
 }
